@@ -1,7 +1,7 @@
 import { ASSETS_BASE_URL } from "./config";
 
 export const IMAGES = {
-  logo: `${ASSETS_BASE_URL}/logo.svg`,
+  logo: `${ASSETS_BASE_URL}/logo.png`,
   hadeed: `${ASSETS_BASE_URL}/hadeed.png`,
   frame: `${ASSETS_BASE_URL}/frame.svg`,
 
@@ -26,24 +26,24 @@ export const IMAGES = {
     html: `${ASSETS_BASE_URL}/skills/html.svg`,
   },
   projects: {
-    news: `${ASSETS_BASE_URL}/projects/news.svg`,
-    login: `${ASSETS_BASE_URL}/projects/login.svg`,
-    shows: `${ASSETS_BASE_URL}/projects/shows.svg`,
-    textUtils: `${ASSETS_BASE_URL}/projects/textutils.svg`,
-    chat: `${ASSETS_BASE_URL}/projects/chat.svg`,
-    pharmacy: `${ASSETS_BASE_URL}/projects/pharmacy.svg`,
+    news: `${ASSETS_BASE_URL}/projects/news.png`,
+    login: `${ASSETS_BASE_URL}/projects/login.png`,
+    shows: `${ASSETS_BASE_URL}/projects/shows.png`,
+    textUtils: `${ASSETS_BASE_URL}/projects/textutils.png`,
+    chat: `${ASSETS_BASE_URL}/projects/chat.png`,
+    pharmacy: `${ASSETS_BASE_URL}/projects/pharmacy.png`,
 
-    maze: `${ASSETS_BASE_URL}/projects/maze.svg`,
-    dipProject: `${ASSETS_BASE_URL}/projects/dipProject.svg`,
+    maze: `${ASSETS_BASE_URL}/projects/maze.png`,
+    dipProject: `${ASSETS_BASE_URL}/projects/dipProject.png`,
 
-    foodpanda: `${ASSETS_BASE_URL}/projects/foodpanda.svg`,
-    artist: `${ASSETS_BASE_URL}/projects/artist.svg`,
+    foodpanda: `${ASSETS_BASE_URL}/projects/foodpanda.png`,
+    artist: `${ASSETS_BASE_URL}/projects/artist.png`,
   },
   certificates: {
-    hackerrank: `${ASSETS_BASE_URL}/certificates/hackerrank.svg`,
-    softec23: `${ASSETS_BASE_URL}/certificates/softec23.svg`,
-    nascon24: `${ASSETS_BASE_URL}/certificates/nascon24.svg`,
-    deans: `${ASSETS_BASE_URL}/certificates/deans.svg`,
+    hackerrank: `${ASSETS_BASE_URL}/certificates/hackerrank.png`,
+    softec23: `${ASSETS_BASE_URL}/certificates/softec23.png`,
+    nascon24: `${ASSETS_BASE_URL}/certificates/nascon24.png`,
+    deans: `${ASSETS_BASE_URL}/certificates/deans.png`,
   },
   awards: {
     medal: `${ASSETS_BASE_URL}/awards/medal.png`,
