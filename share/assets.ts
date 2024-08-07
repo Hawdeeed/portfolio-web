@@ -46,10 +46,10 @@ export const IMAGES = {
     deans: `${ASSETS_BASE_URL}/certificates/deans.svg`,
   },
   awards: {
-    medal: `${ASSETS_BASE_URL}/awards/medal.svg`,
-    school1: `${ASSETS_BASE_URL}/awards/school1.svg`,
-    school2: `${ASSETS_BASE_URL}/awards/school2.svg`,
-    school3: `${ASSETS_BASE_URL}/awards/school3.svg`,
+    medal: `${ASSETS_BASE_URL}/awards/medal.png`,
+    school1: `${ASSETS_BASE_URL}/awards/school1.png`,
+    school2: `${ASSETS_BASE_URL}/awards/school2.png`,
+    school3: `${ASSETS_BASE_URL}/awards/school3.png`,
   },
   contactUs: {
     background: `${ASSETS_BASE_URL}/contact-us/background.svg`,
