@@ -107,7 +107,7 @@ export const PROJECTS: Project[] = [
   },
   {
     imageUrl: IMAGES.projects.login,
-    title: "Transparent Login Form",
+    title: "Transparent Form",
     description:
     "Created a modern and visually appealing login form using HTML and CSS, featuring a transparent background that allows the form to seamlessly blend with any webpage. The form includes user-friendly input fields with smooth transitions and animations, enhancing the overall user experience. ",
   },
@@ -131,7 +131,7 @@ export const PROJECTS: Project[] = [
   },
   {
     imageUrl: IMAGES.projects.pharmacy,
-    title: "Pharmacy Management",
+    title: "Pharma System",
     description:
     "I developed a comprehensive Pharmacy Management System using ASP.NET, C#, and Microsoft SQL Server, which streamlines operations including inventory, sales, and prescription management, while enhancing customer and supplier interactions through detailed analytics. I didn't focus much on front-end side here.",
   },
@@ -149,7 +149,7 @@ export const PROJECTS: Project[] = [
   },
   {
     imageUrl: IMAGES.projects.foodpanda,
-    title: "Food Delivery Management",
+    title: "Food Management",
     description:
     "Developed a comprehensive text-based application in C++ designed for managing food delivery and cooking operations. This system efficiently handles all aspects of the operations using text-based input and output, providing a straightforward and accessible interface.",
   },
@@ -208,13 +208,13 @@ export const AWARDS: Award[] = [
   },
   {
     imageUrl: IMAGES.awards.school2,
-    title: "Outstanding Performance",
+    title: "High Effort",
     description:
       "Receiving this award was a testament to my dedication and hard work. This recognition further motivated me to excel my goals with even greater determination.",
   },
   {
     imageUrl: IMAGES.awards.medal,
-    title: "Milestone Achievement",
+    title: "Silver Medal",
     description:
       "This award was a significant milestone in my professional journey during university. It recognized my contribution, highlighting my dedication and skill in Computer Science. ",
   },

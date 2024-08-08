@@ -10,7 +10,8 @@ const ImageCard: React.FC<ImageCardProps> = ({
   description,
 }) => {
   return (
-    <div className="max-w-xs sm:max-w-sm md:max-w-md xl:max-w-lg 3xl:max-w-xl bg-white border border-gray-200 rounded-2xl shadow-2xl flex-shrink-0 p-4 transform transition-transform duration-300 hover:scale-105">
+    // transform transition-transform duration-300 
+    <div className="max-w-xs sm:max-w-sm md:max-w-md xl:max-w-lg 3xl:max-w-xl bg-white border border-gray-200 rounded-2xl shadow-2xl flex-shrink-0 p-4 ">
       <img
         className="rounded-2xl"
         src={imageUrl}
@@ -19,7 +20,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
         loading="eager"
       />
       <div className="pt-5 px-5 whitespace-normal">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-black line-clamp-1 text-ellipsis">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-black  text-ellipsis">
           {title}
         </h5>
         {description && (
