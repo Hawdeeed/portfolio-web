@@ -2,7 +2,7 @@ import { ASSETS_BASE_URL } from "./config";
 
 export const IMAGES = {
   logo: `${ASSETS_BASE_URL}/logo.png`,
-  hadeed: `${ASSETS_BASE_URL}/hadeed.png`,
+  hadeed: `${ASSETS_BASE_URL}/hadeed.JPG`,
   frame: `${ASSETS_BASE_URL}/frame.svg`,
 
   socials: {
