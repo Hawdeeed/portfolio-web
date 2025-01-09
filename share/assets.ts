@@ -44,6 +44,8 @@ export const IMAGES = {
     softec23: `${ASSETS_BASE_URL}/certificates/softec23.png`,
     nascon24: `${ASSETS_BASE_URL}/certificates/nascon24.png`,
     deans: `${ASSETS_BASE_URL}/certificates/deans.png`,
+    huawei: `${ASSETS_BASE_URL}/certificates/huawei.png`,
+    // aiconcepts: `${ASSETS_BASE_URL}/certificates/microsoft-AIconcepts.png`,
   },
   awards: {
     medal: `${ASSETS_BASE_URL}/awards/medal.png`,

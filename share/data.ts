@@ -165,6 +165,18 @@ export const PROJECTS: Project[] = [
 
 export const CERTIFICATES: Certificate[] = [
   {
+    imageUrl: IMAGES.certificates.huawei,
+    title: "Huawei Cloud Service Certification",
+    description:
+      "Awarded for demonstrating proficiency in cloud computing technologies through Huawei's Cloud Service Computing Micro-Certification program.",
+  },
+  // {
+  //   imageUrl: IMAGES.certificates.aiconcepts,
+  //   title: "Fundamental AI Concepts",
+  //   description:
+  //     "Certified by Microsoft after completing a module on the foundational concepts of Artificial Intelligence, including its applications and ethical considerations.",
+  // },
+  {
     imageUrl: IMAGES.certificates.deans,
     title: "Academic Excellence",
     description:
