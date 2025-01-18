@@ -149,7 +149,7 @@ export const PROJECTS: Project[] = [
     title: "Real Time Chat",
     description:
     "Developed a dynamic chat application using Node.js and Socket.IO, facilitating instant messaging and real-time communication between users. The application is making it easy for users to send and receive messages seamlessly. By utilizing Node.js and the real-time capabilities of Sockets, it delivers low latency and high performance.",
-    skills: ["NodeJS", "Sockets", "JavaScript", "PUG", "CSS" ], // Added skills
+    skills: ["NodeJS", "Sockets", "JavaScript",  "HTML", "CSS", "Users Interaction" ], // Added skills
     sourceCodeUrl:"https://github.com/Hawdeeed/WeChat-App",
   },
   {
