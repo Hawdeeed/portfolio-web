@@ -101,65 +101,101 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
-    imageUrl: IMAGES.projects.news,
-    title: "NewsAPI",
-    description:"Developed a dynamic and responsive news application using React that integrates with a News API to provide users with the latest news articles from various sources. The application features a sleek, user-friendly interface designed with Bootstrap CSS, ensuring a seamless and visually appealing user experience across different devices.",
-  },
-  {
-    imageUrl: IMAGES.projects.login,
-    title: "Transparent Form",
+    imageUrl: IMAGES.projects.gigo,
+    title: "Freelancing Platform with AI Chatbot",
     description:
-    "Created a modern and visually appealing login form using HTML and CSS, featuring a transparent background that allows the form to seamlessly blend with any webpage. The form includes user-friendly input fields with smooth transitions and animations, enhancing the overall user experience. ",
+      "Created an interactive freelancing platform using modern web technologies, allowing clients to connect with freelancers offering diverse services like web development, app development, and more. Integrated a real-time chatbot powered by AI to assist users with queries, facilitate dispute resolution, and provide a seamless user experience. This project demonstrates my expertise in full-stack development and conversational AI integration.",
+    skills: ["NextJS", "Tailwind", "TypeScript", "AI Chatbot", "MongoDB", "FireBase"],
+    sourceCodeUrl: "https://github.com/Hawdeeed/GIGO-Freelancing-Website",
   },
+
+  {
+    imageUrl: IMAGES.projects.news,
+    title: "React Based NewsAPI",
+    description:"Developed a dynamic and responsive news application using React that integrates with a News API to provide users with the latest news articles from various sources. The application features a sleek, user-friendly interface designed with Bootstrap CSS, ensuring a seamless and visually appealing user experience across different devices.",
+    skills: ["ReactJS", "Bootstrap", "JavaScript", "API integeration", "NodeJS"], // Added skills
+    sourceCodeUrl:"https://github.com/Hawdeeed/React-Based-News-API",
+
+
+  },
+  // {
+  //   imageUrl: IMAGES.projects.login,
+  //   title: "Transparent Form",
+  //   description:
+  //   "Created a modern and visually appealing login form using HTML and CSS, featuring a transparent background that allows the form to seamlessly blend with any webpage. The form includes user-friendly input fields with smooth transitions and animations, enhancing the overall user experience. ",
+  //   skills: ["HTML","CSS"], // Added skills
+
+  // },
   {
     imageUrl: IMAGES.projects.textUtils,
     title: "Text-Utils",
     description:
     "Developed an engaging website named Text Utils using ReactJS, designed to manage text efficiently. The application features both light and dark background modes, allowing users to switch between themes based on their preference. It includes text transformation, character and word count, and formatting options etc. ",
+    skills: ["ReactJS", "Bootstrap", "JavaScript", "NodeJS", "Redux"], // Added skills
+    sourceCodeUrl:"",
+
+
   },
-  {
-    imageUrl: IMAGES.projects.shows,
-    title: "Landing Page",
-    description:
-    "Developed a sophisticated landing page for an online premium movies website using HTML and CSS. The landing page is designed to captivate visitors with its visually appealing layout and intuitive navigation. Users can easily sign up and choose from various subscription plans to get started.",
-  },
+  // {
+  //   imageUrl: IMAGES.projects.shows,
+  //   title: "Landing Page",
+  //   description:
+  //   "Developed a sophisticated landing page for an online premium movies website using HTML and CSS. The landing page is designed to captivate visitors with its visually appealing layout and intuitive navigation. Users can easily sign up and choose from various subscription plans to get started.",
+  //   skills: ["HTML","CSS"], // Added skills
+
+  // },
   {
     imageUrl: IMAGES.projects.chat,
     title: "Real Time Chat",
     description:
     "Developed a dynamic chat application using Node.js and Socket.IO, facilitating instant messaging and real-time communication between users. The application is making it easy for users to send and receive messages seamlessly. By utilizing Node.js and the real-time capabilities of Sockets, it delivers low latency and high performance.",
+    skills: ["NodeJS", "Sockets", "JavaScript", "PUG", "CSS" ], // Added skills
+    sourceCodeUrl:"https://github.com/Hawdeeed/WeChat-App",
   },
   {
     imageUrl: IMAGES.projects.pharmacy,
-    title: "Pharma System",
+    title: "Pharmacy Management System",
     description:
     "I developed a comprehensive Pharmacy Management System using ASP.NET, C#, and Microsoft SQL Server, which streamlines operations including inventory, sales, and prescription management, while enhancing customer and supplier interactions through detailed analytics. I didn't focus much on front-end side here.",
+    skills: ["ASP.NET", "C#","Microsoft SQL", "Database Management" ], // Added skills
+    sourceCodeUrl:"",
+
   },
-  {
-    imageUrl: IMAGES.projects.maze,
-    title: "Bee Game",
-    description:
-    "The Bee Game is a maze-based arcade game developed using Assembly x86. In this game, players navigate a bee character through a complex maze to find and collect honey. This project demonstrates my proficiency in low-level programming and understanding of computer architecture.",
-  },
+  // {
+  //   imageUrl: IMAGES.projects.maze,
+  //   title: "Bee Game",
+  //   description:
+  //   "The Bee Game is a maze-based arcade game developed using Assembly x86. In this game, players navigate a bee character through a complex maze to find and collect honey. This project demonstrates my proficiency in low-level programming and understanding of computer architecture.",
+  //   skills: ["x86-Assembly"], // Added skills
+  // },
   {
     imageUrl: IMAGES.projects.dipProject,
     title: "Pesudo Coloring",
     description:
     "Made a project regarding Digital Image Processing. The technique I used in this project is the art of Pseudo Coloring ( Pseudo coloring allows for customization of color schemes to suit specific applications or user preferences). This flexibility can be valuable in various fields such as medical imaging and scientific visualization.",
+    skills: ["Python", "Tkinter", "Image Processing", "Pseudo Coloring"], // Added skills
+    sourceCodeUrl:"",
+
+
   },
   {
     imageUrl: IMAGES.projects.foodpanda,
-    title: "Food Management",
+    title: "Food Management and Delivering",
     description:
     "Developed a comprehensive text-based application in C++ designed for managing food delivery and cooking operations. This system efficiently handles all aspects of the operations using text-based input and output, providing a straightforward and accessible interface.",
+    skills: ["C++", "Threads", "Data Structures", "Shortest Path Algorithms"], // Added skills
+    sourceCodeUrl:"https://github.com/Hawdeeed/CPP-Projects/tree/main/Food%20Panda%20Delivery%20System",
+
   },
 
-  {
-    imageUrl: IMAGES.projects.artist,
-    title: "Artists Management",
-    description:
-    "Developed a comprehensive text-based application in C++ for managing records of artists, including writers, singers, and actors. This application provides a user-friendly interface for handling all aspects of artist record management through text-based input and output. ",
-  },
+  // {
+  //   imageUrl: IMAGES.projects.artist,
+  //   title: "Artists Management",
+  //   description:
+  //   "Developed a comprehensive text-based application in C++ for managing records of artists, including writers, singers, and actors. This application provides a user-friendly interface for handling all aspects of artist record management through text-based input and output. ",
+  //   skills: ["C++", "OOP", ] // Added skills
+
+  // },
 ];
 
 
@@ -206,24 +242,24 @@ export const CERTIFICATES: Certificate[] = [
 
 
 export const AWARDS: Award[] = [
-  {
-    imageUrl: IMAGES.awards.school3,
-    title: "First Award",
-    description:
-      "Got my first medal at school. It marked the beginning of my journey towards excellence, reinforcing my commitment to continuous growth and achievement.",
-  },
-  {
-    imageUrl: IMAGES.awards.school1,
-    title: "Top Honors",
-    description:
-      "Receiving my second school medal was a pivotal moment in my academic career. This recognition not only validated my efforts but also significantly boosted my confidence.",
-  },
-  {
-    imageUrl: IMAGES.awards.school2,
-    title: "High Effort",
-    description:
-      "Receiving this award was a testament to my dedication and hard work. This recognition further motivated me to excel my goals with even greater determination.",
-  },
+  // {
+  //   imageUrl: IMAGES.awards.school3,
+  //   title: "First Award",
+  //   description:
+  //     "Got my first medal at school. It marked the beginning of my journey towards excellence, reinforcing my commitment to continuous growth and achievement.",
+  // },
+  // {
+  //   imageUrl: IMAGES.awards.school1,
+  //   title: "Top Honors",
+  //   description:
+  //     "Receiving my second school medal was a pivotal moment in my academic career. This recognition not only validated my efforts but also significantly boosted my confidence.",
+  // },
+  // {
+  //   imageUrl: IMAGES.awards.school2,
+  //   title: "High Effort",
+  //   description:
+  //     "Receiving this award was a testament to my dedication and hard work. This recognition further motivated me to excel my goals with even greater determination.",
+  // },
   {
     imageUrl: IMAGES.awards.medal,
     title: "Silver Medal",

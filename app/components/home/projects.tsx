@@ -16,7 +16,7 @@ const Projects = () => {
 
   return (
     <section className="bg-white" id="projects">
-      <div className="relative flex flex-col py-10 xl:pb-20 max-w-[1500px] mx-auto">
+      <div className="relative  py-10 xl:pb-20 max-w-[1500px] mx-auto">
         <div className="flex md:flex-row flex-col md:justify-between md:items-center items-start px-6 sm:px-14 xl:px-24">
           <Heading
             text="My Latest"
@@ -38,14 +38,19 @@ const Projects = () => {
           className="px-6 sm:px-14 xl:px-24 pt-8 sm:pt-10 pb-16 overflow-x-auto whitespace-nowrap flex gap-6 sm:gap-8 md:gap-10 no-scrollbar"
           ref={scrollContainerRef}
         >
-          {PROJECTS.map((project: Project, index: number) => (
-            <ImageCard
-              key={index}
-              imageUrl={project.imageUrl}
-              title={project.title}
-              description={project.description}
-            />
-          ))}
+         {PROJECTS.map((project: Project, index: number) => {
+  return (
+    <ImageCard
+      key={index}
+      imageUrl={project.imageUrl}
+      title={project.title}
+      description={project.description}
+      skills={project.skills}
+      sourceCodeUrl={project.sourceCodeUrl}
+    />
+  );
+})}
+
         </div>
       </div>
     </section>

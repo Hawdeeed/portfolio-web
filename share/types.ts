@@ -45,6 +45,8 @@ interface Project {
   imageUrl: string;
   title: string;
   description: string;
+  skills: string[];
+  sourceCodeUrl: string;
 }
 interface Certificate {
   imageUrl: string;

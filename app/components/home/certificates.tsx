@@ -1,7 +1,7 @@
 "use client";
 import { AWARDS, CERTIFICATES } from "@/share/data"; // Make sure you have an AWARDS array in your data
 import { useRef, useState } from "react";
-import ImageCard from "../cards/image-card";
+import CertificateCard from "../cards/certificate-card";
 import { ArrowLeft, ArrowRight } from "../icons";
 import Heading from "../typography/heading";
 
@@ -32,7 +32,7 @@ const Certificates = () => {
           />
           
           <div className="flex flex-row items-center lg:mt-0 mt-4  ">
-          <div> 
+          {/* <div> 
           <select
             className="bg-white text-black font-semibold border-2 border-black rounded-lg max-w-[120px] my-3 lg:my-0 lg:mr-20 mr-12"
             value={selectedCategory}
@@ -41,7 +41,7 @@ const Certificates = () => {
             <option value="Certificates">Certificates</option>
             <option value="Medals">Medals</option>
           </select>
-          </div> 
+          </div>  */}
           {CERTIFICATES.length > 2 && (
             <div className="flex gap-6 ">
               <div onClick={() => handleScroll(-400)}>
@@ -59,7 +59,7 @@ const Certificates = () => {
           ref={scrollContainerRef}
         >
           {items.map((item, index) => (
-            <ImageCard
+            <CertificateCard
               key={index}
               imageUrl={item.imageUrl}
               title={item.title}

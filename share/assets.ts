@@ -2,7 +2,7 @@ import { ASSETS_BASE_URL } from "./config";
 
 export const IMAGES = {
   logo: `${ASSETS_BASE_URL}/logo.png`,
-  hadeed: `${ASSETS_BASE_URL}/hadeed.JPG`,
+  hadeed: `${ASSETS_BASE_URL}/hadeednew.jpg`,
   frame: `${ASSETS_BASE_URL}/frame.svg`,
 
   socials: {
@@ -30,7 +30,7 @@ export const IMAGES = {
     login: `${ASSETS_BASE_URL}/projects/login.png`,
     shows: `${ASSETS_BASE_URL}/projects/shows.png`,
     textUtils: `${ASSETS_BASE_URL}/projects/textutils.png`,
-    chat: `${ASSETS_BASE_URL}/projects/chat.png`,
+    chat: `${ASSETS_BASE_URL}/projects/chat.jpg`,
     pharmacy: `${ASSETS_BASE_URL}/projects/pharmacy.png`,
 
     maze: `${ASSETS_BASE_URL}/projects/maze.png`,
@@ -38,6 +38,8 @@ export const IMAGES = {
 
     foodpanda: `${ASSETS_BASE_URL}/projects/foodpanda.png`,
     artist: `${ASSETS_BASE_URL}/projects/artist.png`,
+    gigo: `${ASSETS_BASE_URL}/projects/gigo.png`,
+
   },
   certificates: {
     hackerrank: `${ASSETS_BASE_URL}/certificates/hackerrank.png`,
