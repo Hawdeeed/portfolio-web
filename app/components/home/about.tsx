@@ -42,7 +42,7 @@ export const About = () => {
             <Heading coloredText="Hadeed Ahmed" />
           </div>
           <p className="text-white mt-6 text-[18px]">
-            A passionate computer science student with a keen interest in software development and data science. I enjoy solving complex problems through coding and continually seek opportunities to learn and grow in the tech field. With a strong foundation in various programming languages and frameworks, I build efficient, scalable, and user-friendly applications. I am fascinated by AI/ML and believe in the power of collaboration and open-source contributions. My goal is to leverage my skills to make a meaningful impact in the tech industry, striving for excellence and embracing new challenges along the way.
+            A passionate developer with a keen interest in software development and data science. I enjoy solving complex problems through coding and continually seek opportunities to learn and grow in the tech field. With a strong foundation in various programming languages and frameworks, I build efficient, scalable, and user-friendly applications. I am fascinated by AI/ML and believe in the power of collaboration and open-source contributions. My goal is to leverage my skills to make a meaningful impact in the tech industry, striving for excellence and embracing new challenges along the way.
           </p>
           <div className="mt-6">
             <button

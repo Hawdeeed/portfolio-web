@@ -76,9 +76,9 @@ const Education = () => {
           }`}
         >
           <div className="w-full xl:w-8/12 mr-8">
-            <Heading text="Computer Science Student at" coloredText="FAST" />
+            <Heading text="Computer Science Senior at" coloredText="FAST" />
             <Heading text="National University" coloredTextStart={true} />
-            <p className="ml-1 text-[#ff004f]">Expected graduate in 2025</p>
+            {/* <p className="ml-1 text-[#ff004f]">Expected graduate in 2025</p> */}
           </div>
           <div className="xl:w-5/12 w-full">
             <p className="text-white mt-6 xl:text-[20px] text-[20px]">
