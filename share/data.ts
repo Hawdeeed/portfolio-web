@@ -274,18 +274,23 @@ export const AWARDS: Award[] = [
 // data.ts
 export const HIRING: Hire[] = [
   {
-    title: "Web Developer",
+    title: "Freelancer",
     description: "at Fiverr",
     additionalDescription: "(Current)",
   },
+  // {
+  //   title: "Internee",
+  //   description: "at CodSoft",
+  //   additionalDescription: "(Aug-2023 to Sep-2023)",
+  // },
   {
-    title: "Internee",
-    description: "at CodSoft",
-    additionalDescription: "(Aug-2023 to Sep-2023)",
+    title: "Full Stack Web Developer",
+    description: "at Grootcore Systems",
+    additionalDescription: "(Current)",
   },
   {
-    title: "Internee",
-    description: "at Grootcore Systems",
+    title: "Full Stack Web Developer",
+    description: "at Upwork",
     additionalDescription: "(Current)",
   },
 ];
