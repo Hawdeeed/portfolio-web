@@ -39,6 +39,7 @@ export const IMAGES = {
     foodpanda: `${ASSETS_BASE_URL}/projects/foodpanda.png`,
     artist: `${ASSETS_BASE_URL}/projects/artist.png`,
     gigo: `${ASSETS_BASE_URL}/projects/gigo.png`,
+    kitchen: `${ASSETS_BASE_URL}/projects/kitchencabs.png`,
 
   },
   certificates: {

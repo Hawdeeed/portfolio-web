@@ -108,6 +108,14 @@ export const PROJECTS: Project[] = [
     skills: ["NextJS", "Tailwind", "TypeScript", "AI Chatbot", "MongoDB", "FireBase"],
     sourceCodeUrl: "https://github.com/Hawdeeed/GIGO-Freelancing-Website",
   },
+  {
+    imageUrl: IMAGES.projects.kitchen,
+    title: "Luxe Kitchen Cabinets",
+    description:
+      "The Luxe Kitchen Cabinets website is an online platform that showcases premium custom kitchen solutions. This website features an elegant, responsive design that allows users to explore a wide range of kitchen designs, products, and services. It provides an easy-to-navigate experience, with high-quality image galleries and a contact form for customer inquiries, making it the perfect destination for individuals looking to enhance their kitchen spaces with tailored, high-end solutions.",
+    skills: ["NextJS", "Tailwind", "TypeScript", "API Integeration"],
+    sourceCodeUrl: "https://github.com/Hawdeeed/Luxe-Kitchen-Cabinets-Website",
+  },
 
   {
     imageUrl: IMAGES.projects.news,
