@@ -16,7 +16,7 @@ export const About = () => {
     const pdfUrl = "about-us/resume.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Hadeed-resume.pdf";
+    link.download = "Hadeed-Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
