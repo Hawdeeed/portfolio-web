@@ -54,18 +54,18 @@ export const About = () => {
           </div>
         </div>
         <div
-          className={`flex   lg:my-0 mt-8 transition-transform duration-1000 ease-in-out ${
+          className={`w-full lg:w-[80%] md:max-w-[650px] lg:my-0 mt-8 transition-transform duration-1000 ease-in-out ${
             isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
           }`}
         >
           <Image
             src={IMAGES.hadeed}
             alt="Home Page Image"
-            width={100}
-            height={100}
+            width={200}
+            height={200}
             loading="eager"
             priority
-            className="mx-auto md:mx-0 w-fit h-[500px] rounded-2xl border-transparent"
+            className="mx-auto md:mx-0 w-fit h-fit rounded-2xl border-transparent"
           />
         </div>
       </div>
