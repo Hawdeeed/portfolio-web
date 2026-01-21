@@ -39,16 +39,14 @@ export const FOOTER_ITEMS: FooterItems = {
       href: "https://www.instagram.com/hadeedsheikhh?igsh=MWJoNHFoYmVwZ3hmNg%3D%3D&utm_source=qr ",
     },
   ],
-  linkItems: [
-   
-  ],
+  linkItems: [],
 };
 
 export const CLIENTS: Skill[] = [
   // {
   //   name: "C/C++",
   //   logo: IMAGES.clients.c,
-    
+
   // },
   {
     name: "ReactJS",
@@ -82,22 +80,18 @@ export const CLIENTS: Skill[] = [
   //   name: "HTML",
   //   logo: IMAGES.clients.html,
   // },
- 
 ];
 
 export const EXPERIENCE: Experience[] = [
   {
     title: "2021",
-    description:"from",
- },
+    description: "from",
+  },
   {
     title: "2025",
-    description: "to"
-   },
- 
+    description: "to",
+  },
 ];
-
-
 
 export const PROJECTS: Project[] = [
   {
@@ -105,7 +99,14 @@ export const PROJECTS: Project[] = [
     title: "Freelancing Platform with AI Chatbot",
     description:
       "Created an interactive freelancing platform using modern web technologies, allowing clients to connect with freelancers offering diverse services like web development, app development, and more. Integrated a real-time chatbot powered by AI to assist users with queries, facilitate dispute resolution, and provide a seamless user experience. This project demonstrates my expertise in full-stack development and conversational AI integration.",
-    skills: ["NextJS", "Tailwind", "TypeScript", "AI Chatbot", "MongoDB", "FireBase"],
+    skills: [
+      "NextJS",
+      "Tailwind",
+      "TypeScript",
+      "AI Chatbot",
+      "MongoDB",
+      "FireBase",
+    ],
     sourceCodeUrl: "https://github.com/Hawdeeed/GIGO-Freelancing-Website",
   },
   {
@@ -120,11 +121,16 @@ export const PROJECTS: Project[] = [
   {
     imageUrl: IMAGES.projects.news,
     title: "React Based NewsAPI",
-    description:"Developed a dynamic and responsive news application using React that integrates with a News API to provide users with the latest news articles from various sources. The application features a sleek, user-friendly interface designed with Bootstrap CSS, ensuring a seamless and visually appealing user experience across different devices.",
-    skills: ["ReactJS", "Bootstrap", "JavaScript", "API integeration", "NodeJS"], // Added skills
-    sourceCodeUrl:"https://github.com/Hawdeeed/React-Based-News-API",
-
-
+    description:
+      "Developed a dynamic and responsive news application using React that integrates with a News API to provide users with the latest news articles from various sources. The application features a sleek, user-friendly interface designed with Bootstrap CSS, ensuring a seamless and visually appealing user experience across different devices.",
+    skills: [
+      "ReactJS",
+      "Bootstrap",
+      "JavaScript",
+      "API integeration",
+      "NodeJS",
+    ], // Added skills
+    sourceCodeUrl: "https://github.com/Hawdeeed/React-Based-News-API",
   },
   // {
   //   imageUrl: IMAGES.projects.login,
@@ -138,11 +144,9 @@ export const PROJECTS: Project[] = [
     imageUrl: IMAGES.projects.textUtils,
     title: "Text-Utils",
     description:
-    "Developed an engaging website named Text Utils using ReactJS, designed to manage text efficiently. The application features both light and dark background modes, allowing users to switch between themes based on their preference. It includes text transformation, character and word count, and formatting options etc. ",
+      "Developed an engaging website named Text Utils using ReactJS, designed to manage text efficiently. The application features both light and dark background modes, allowing users to switch between themes based on their preference. It includes text transformation, character and word count, and formatting options etc. ",
     skills: ["ReactJS", "Bootstrap", "JavaScript", "NodeJS", "Redux"], // Added skills
-    sourceCodeUrl:"",
-
-
+    sourceCodeUrl: "",
   },
   // {
   //   imageUrl: IMAGES.projects.shows,
@@ -156,18 +160,24 @@ export const PROJECTS: Project[] = [
     imageUrl: IMAGES.projects.chat,
     title: "Real Time Chat",
     description:
-    "Developed a dynamic chat application using Node.js and Socket.IO, facilitating instant messaging and real-time communication between users. The application is making it easy for users to send and receive messages seamlessly. By utilizing Node.js and the real-time capabilities of Sockets, it delivers low latency and high performance.",
-    skills: ["NodeJS", "Sockets", "JavaScript",  "HTML", "CSS", "Users Interaction" ], // Added skills
-    sourceCodeUrl:"https://github.com/Hawdeeed/WeChat-App",
+      "Developed a dynamic chat application using Node.js and Socket.IO, facilitating instant messaging and real-time communication between users. The application is making it easy for users to send and receive messages seamlessly. By utilizing Node.js and the real-time capabilities of Sockets, it delivers low latency and high performance.",
+    skills: [
+      "NodeJS",
+      "Sockets",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Users Interaction",
+    ], // Added skills
+    sourceCodeUrl: "https://github.com/Hawdeeed/WeChat-App",
   },
   {
     imageUrl: IMAGES.projects.pharmacy,
     title: "Pharmacy Management System",
     description:
-    "I developed a comprehensive Pharmacy Management System using ASP.NET, C#, and Microsoft SQL Server, which streamlines operations including inventory, sales, and prescription management, while enhancing customer and supplier interactions through detailed analytics. I didn't focus much on front-end side here.",
-    skills: ["ASP.NET", "C#","Microsoft SQL", "Database Management" ], // Added skills
-    sourceCodeUrl:"",
-
+      "I developed a comprehensive Pharmacy Management System using ASP.NET, C#, and Microsoft SQL Server, which streamlines operations including inventory, sales, and prescription management, while enhancing customer and supplier interactions through detailed analytics. I didn't focus much on front-end side here.",
+    skills: ["ASP.NET", "C#", "Microsoft SQL", "Database Management"], // Added skills
+    sourceCodeUrl: "",
   },
   // {
   //   imageUrl: IMAGES.projects.maze,
@@ -180,20 +190,18 @@ export const PROJECTS: Project[] = [
     imageUrl: IMAGES.projects.dipProject,
     title: "Pesudo Coloring",
     description:
-    "Made a project regarding Digital Image Processing. The technique I used in this project is the art of Pseudo Coloring ( Pseudo coloring allows for customization of color schemes to suit specific applications or user preferences). This flexibility can be valuable in various fields such as medical imaging and scientific visualization.",
+      "Made a project regarding Digital Image Processing. The technique I used in this project is the art of Pseudo Coloring ( Pseudo coloring allows for customization of color schemes to suit specific applications or user preferences). This flexibility can be valuable in various fields such as medical imaging and scientific visualization.",
     skills: ["Python", "Tkinter", "Image Processing", "Pseudo Coloring"], // Added skills
-    sourceCodeUrl:"",
-
-
+    sourceCodeUrl: "",
   },
   {
     imageUrl: IMAGES.projects.foodpanda,
     title: "Food Management and Delivering",
     description:
-    "Developed a comprehensive text-based application in C++ designed for managing food delivery and cooking operations. This system efficiently handles all aspects of the operations using text-based input and output, providing a straightforward and accessible interface.",
+      "Developed a comprehensive text-based application in C++ designed for managing food delivery and cooking operations. This system efficiently handles all aspects of the operations using text-based input and output, providing a straightforward and accessible interface.",
     skills: ["C++", "Threads", "Data Structures", "Shortest Path Algorithms"], // Added skills
-    sourceCodeUrl:"https://github.com/Hawdeeed/CPP-Projects/tree/main/Food%20Panda%20Delivery%20System",
-
+    sourceCodeUrl:
+      "https://github.com/Hawdeeed/CPP-Projects/tree/main/Food%20Panda%20Delivery%20System",
   },
 
   // {
@@ -205,7 +213,6 @@ export const PROJECTS: Project[] = [
 
   // },
 ];
-
 
 export const CERTIFICATES: Certificate[] = [
   {
@@ -244,10 +251,7 @@ export const CERTIFICATES: Certificate[] = [
     description:
       "Certified for participating as a team in the Web Development competition at NASCON, held at FAST NUCES, Islamabad.",
   },
-
-  
 ];
-
 
 export const AWARDS: Award[] = [
   // {
@@ -274,18 +278,10 @@ export const AWARDS: Award[] = [
     description:
       "This award was a significant milestone in my professional journey during university. It recognized my contribution, highlighting my dedication and skill in Computer Science. ",
   },
- 
-
- 
 ];
 
 // data.ts
 export const HIRING: Hire[] = [
-  {
-    title: "Freelancer",
-    description: "at Fiverr",
-    additionalDescription: "(Current)",
-  },
   // {
   //   title: "Internee",
   //   description: "at CodSoft",
@@ -297,11 +293,13 @@ export const HIRING: Hire[] = [
     additionalDescription: "(Current)",
   },
   {
-    title: "Full Stack Web Developer",
-    description: "at Upwork",
+    title: "Backend Developer",
+    description: "at Codecross",
+    additionalDescription: "(Current)",
+  },
+  {
+    title: "AI Engineer",
+    description: "at Fiverr",
     additionalDescription: "(Current)",
   },
 ];
-
-
-
