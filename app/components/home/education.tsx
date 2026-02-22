@@ -66,19 +66,16 @@ const Education = () => {
       id="education"
     >
       <div
-        className={`flex flex-col justify-center items-center gap-14 lg:gap-16 pt-16 sm:pt-24 xl:pt-28 px-6 sm:px-14 xl:px-24 max-w-[1500px] mx-auto transition-transform duration-1000 ease-in-out ${
-          isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
-        }`}
+        className={`flex flex-col justify-center items-center gap-14 lg:gap-16 pt-16 sm:pt-24 xl:pt-28 px-6 sm:px-14 xl:px-24 max-w-[1500px] mx-auto transition-transform duration-1000 ease-in-out ${isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
+          }`}
       >
         <div
-          className={`w-full flex flex-col xl:flex-row xl:items-center transition-transform duration-1000 ease-in-out ${
-            isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
-          }`}
+          className={`w-full flex flex-col xl:flex-row xl:items-center transition-transform duration-1000 ease-in-out ${isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
+            }`}
         >
           <div className="w-full xl:w-8/12 mr-8">
-            <Heading text="Computer Science Senior at" coloredText="FAST" />
+            <Heading text="Computer Science Graduate from" coloredText="FAST" />
             <Heading text="National University" coloredTextStart={true} />
-            {/* <p className="ml-1 text-[#ff004f]">Expected graduate in 2025</p> */}
           </div>
           <div className="xl:w-5/12 w-full">
             <p className="text-white mt-6 xl:text-[20px] text-[20px]">
@@ -88,17 +85,15 @@ const Education = () => {
         </div>
       </div>
       <div
-        className={`px-6 sm:px-14 xl:px-24 py-14 max-w-[1500px] mx-auto transition-transform duration-1000 ease-in-out ${
-          isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
-        }`}
+        className={`px-6 sm:px-14 xl:px-24 py-14 max-w-[1500px] mx-auto transition-transform duration-1000 ease-in-out ${isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
+          }`}
       >
         <div>
           {HIRING.map((job, index) => (
             <div
               key={index}
-              className={`flex sm:flex-row flex-col justify-between sm:items-center items-start border-b border-gray-300 py-4 transition-transform duration-1000 ease-in-out ${
-                isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
-              }`}
+              className={`flex sm:flex-row flex-col justify-between sm:items-center items-start border-b border-gray-300 py-4 transition-transform duration-1000 ease-in-out ${isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
+                }`}
             >
               <div>
                 <h3 className="md:text-2xl text-xl text-white font-bold">
