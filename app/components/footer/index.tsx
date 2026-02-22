@@ -48,7 +48,7 @@ const Footer = () => {
               height={100}
               loading="eager"
               priority
-              className="w-40 xl:w-52 h-8 pr-3"
+              className="w-auto h-24 pr-3"
             />
           </Link>
           <div className="w-fit text-white text-lg xl:text-xl leading-[23px] font-extralight flex flex-col gap-1">
