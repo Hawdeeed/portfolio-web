@@ -15,7 +15,7 @@ const Header = () => {
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setShowDropdown(false);
     }
   };
@@ -26,7 +26,9 @@ const Header = () => {
       links.forEach((link) => {
         link.addEventListener("click", (e) => {
           e.preventDefault();
-          const id = (link as HTMLAnchorElement).getAttribute("href")?.substring(1);
+          const id = (link as HTMLAnchorElement)
+            .getAttribute("href")
+            ?.substring(1);
           if (id) {
             handleScroll(id);
           }
@@ -53,7 +55,10 @@ const Header = () => {
     const items = ["About", "Skills", "Education", "Projects", "Certificates"];
     return items.map((item, index) => (
       <li key={index} className="w-full">
-        <a href={`#${item.toLowerCase()}`} onClick={() => setShowDropdown(false)}>
+        <a
+          href={`#${item.toLowerCase()}`}
+          onClick={() => setShowDropdown(false)}
+        >
           <p
             className={`${dropdown ? "w-full p-1.5 rounded-lg cursor-pointer hover:bg-[#ff004f] hover:text-white text-sm font-semibold" : "hover:text-[#ff004f] font-semibold"} ${pathname === ROUTES[item.toLowerCase() as keyof typeof ROUTES] && "text-[#ff004f]"}`}
           >
@@ -75,7 +80,7 @@ const Header = () => {
             height={100}
             loading="eager"
             priority
-            className="w-44 xl:w-52 h-8"
+            className="w-auto h-24"
           />
         </Link>
         <ul className="hidden lg:flex gap-20 text-white text-base xl:text-lg font-semibold">
