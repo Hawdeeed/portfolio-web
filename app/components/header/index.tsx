@@ -1,107 +1,87 @@
 "use client";
 import { IMAGES } from "@/share/assets";
-import { HEADER_ITEMS } from "@/share/data";
 import { ROUTES } from "@/share/routes";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Menu } from "../icons";
 
 const Header = () => {
-  const pathname = usePathname();
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setShowDropdown(false);
-    }
+  // your header items
+  const additionalItems = [
+    { name: "About", id: "about" },
+    { name: "Skills", id: "skills" },
+    { name: "Education", id: "education" },
+    { name: "Projects", id: "projects" },
+    { name: "Certificates", id: "certificates" },
+    { name: "Contact", id: "contact" },
+  ];
+
+  // split into left and right
+  const mid = Math.ceil(additionalItems.length / 2);
+  const leftItems = additionalItems.slice(0, mid);
+  const rightItems = additionalItems.slice(mid);
+
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+    });
+    setShowDropdown(false);
   };
 
-  useEffect(() => {
-    if (showDropdown) {
-      const links = document.querySelectorAll(".dropdown-content a");
-      links.forEach((link) => {
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          const id = (link as HTMLAnchorElement)
-            .getAttribute("href")
-            ?.substring(1);
-          if (id) {
-            handleScroll(id);
-          }
-        });
-      });
-    }
-  }, [showDropdown]);
-
-  const renderHeaderItems = (dropdown: boolean = false) => {
-    return HEADER_ITEMS.map((item: HeaderItem, index: number) => (
-      <li key={index} className="w-full">
-        <Link href={ROUTES[item.name.toLowerCase() as keyof typeof ROUTES]}>
-          <p
-            className={`${dropdown ? "w-full p-1.5 rounded-lg cursor-pointer hover:bg-[#ff004f] hover:text-white text-sm font-semibold" : "hover:text-[#ff004f] font-semibold"} ${pathname === ROUTES[item.name.toLowerCase() as keyof typeof ROUTES] && "text-[#ff004f]"}`}
-          >
-            {item.name}
-          </p>
-        </Link>
-      </li>
-    ));
-  };
-
-  const renderAdditionalItems = (dropdown: boolean = false) => {
-    const items = ["About", "Skills", "Education", "Projects", "Certificates"];
-    return items.map((item, index) => (
-      <li key={index} className="w-full">
-        <a
-          href={`#${item.toLowerCase()}`}
-          onClick={() => setShowDropdown(false)}
+  const renderItems = (items: typeof additionalItems, mobile = false) =>
+    items.map((item, index) => (
+      <li key={index}>
+        <button
+          onClick={() => scrollToSection(item.id)}
+          className={`font-semibold cursor-pointer
+            hover:text-[#ff004f]
+            ${mobile ? "text-black w-full text-left p-2" : "text-white"}
+          `}
         >
-          <p
-            className={`${dropdown ? "w-full p-1.5 rounded-lg cursor-pointer hover:bg-[#ff004f] hover:text-white text-sm font-semibold" : "hover:text-[#ff004f] font-semibold"} ${pathname === ROUTES[item.toLowerCase() as keyof typeof ROUTES] && "text-[#ff004f]"}`}
-          >
-            {item}
-          </p>
-        </a>
+          {item.name}
+        </button>
       </li>
     ));
-  };
 
   return (
     <header className="bg-bg-dark">
-      <nav className="bg-bg-dark flex justify-between items-center py-6 sm:py-8 xl:py-10 px-6 sm:px-14 xl:px-24 max-w-[1500px] mx-auto">
-        <Link href={ROUTES.home}>
-          <Image
-            src={IMAGES.logo}
-            alt="logo"
-            width={100}
-            height={100}
-            loading="eager"
-            priority
-            className="w-auto h-24"
-          />
-        </Link>
-        <ul className="hidden lg:flex gap-20 text-white text-base xl:text-lg font-semibold">
-          {renderHeaderItems()}
-          {renderAdditionalItems()}
+      <nav className="flex items-center justify-between max-w-[1500px] mx-auto px-6 py-6">
+        {/* LEFT */}
+        <ul className="hidden lg:flex gap-10 flex-1 justify-end text-white">
+          {renderItems(leftItems)}
         </ul>
-        <div className="lg:hidden dropdown dropdown-end">
-          <div
-            tabIndex={0}
-            className="btn btn-circle btn-ghost"
-            onClick={() => setShowDropdown(!showDropdown)}
-          >
-            <Menu className="text-white w-8 h-8" />
-          </div>
+
+        {/* CENTER LOGO */}
+        <div className="flex justify-center flex-shrink-0 px-8">
+          <Link href={ROUTES.home}>
+            <Image
+              src={IMAGES.logo}
+              alt="logo"
+              width={100}
+              height={100}
+              className="h-20 w-auto"
+              priority
+            />
+          </Link>
+        </div>
+
+        {/* RIGHT */}
+        <ul className="hidden lg:flex gap-10 flex-1 justify-start text-white">
+          {renderItems(rightItems)}
+        </ul>
+
+        {/* MOBILE */}
+        <div className="lg:hidden ml-auto">
+          <button onClick={() => setShowDropdown(!showDropdown)}>
+            <Menu className="w-8 h-8 text-white" />
+          </button>
+
           {showDropdown && (
-            <ul
-              tabIndex={0}
-              className="dropdown-content mt-1 z-[1] p-2 shadow bg-white text-black rounded-box w-52"
-            >
-              {renderHeaderItems(true)}
-              {renderAdditionalItems(true)}
+            <ul className="absolute right-6 mt-4 bg-white rounded-lg shadow-lg w-52 p-2">
+              {renderItems(additionalItems, true)}
             </ul>
           )}
         </div>
