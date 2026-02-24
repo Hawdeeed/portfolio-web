@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Heading from "../typography/heading";
+import Text from "../typography/text";
 
 export const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,9 +28,28 @@ export const About = () => {
       }`}
       id="about"
     >
-      <div className="border-2 border-white h-full w-[65%] flex flex-col">
-        <p>Hi I am</p>
-        <h1>Hadeed Ahmed</h1>
+      <div className="border-2 border-white h-full w-[65%] flex flex-col gap-4">
+        <div>
+          <Text className="text-white">Hi I am</Text>
+          <Heading text="Hadeed Ahmed" />
+          <Heading
+            className="text-[30px]"
+            coloredText="Full Stack Web Developer & AI Artist"
+          />
+        </div>
+        <Text className="text-white">
+          I develop scalable, high-performance web applications using React,
+          Next.js, Redux, and Django, with expertise in modern API-driven
+          architectures and efficient backend systems. I build responsive,
+          reliable, and user-focused applications with a strong emphasis on
+          clean code, performance, and long-term maintainability. I also design
+          advanced AI-powered image and video generation workflows using ComfyUI
+          and creative automation tools to create intelligent, automated
+          solutions. I am dedicated to delivering high-quality work, paying
+          close attention to detail, performance, and user experience, while
+          ensuring complete client satisfaction through reliable,
+          production-ready digital products.
+        </Text>
       </div>
       <div className="border-2 border-white h-full w-[35%] "></div>
     </section>
