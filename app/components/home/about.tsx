@@ -26,7 +26,10 @@ export const About = () => {
       }`}
       id="about"
     >
-      <div className="border-2 border-white h-full w-[65%]"></div>
+      <div className="border-2 border-white h-full w-[65%] flex flex-col">
+        <p>Hi I am</p>
+        <h1>Hadeed Ahmed</h1>
+      </div>
       <div className="border-2 border-white h-full w-[35%] "></div>
     </section>
   );
