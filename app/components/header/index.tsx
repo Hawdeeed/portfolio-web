@@ -55,14 +55,14 @@ const Header = () => {
         </ul>
 
         {/* CENTER LOGO */}
-        <div className="flex justify-center flex-shrink-0 px-8">
+        <div className="flex justify-center flex-shrink-0 sm:px-8">
           <Link href={ROUTES.home}>
             <Image
               src={IMAGES.logo}
               alt="logo"
               width={100}
               height={100}
-              className="h-20 w-auto"
+              className="h-16 sm:h-20 w-auto"
               priority
             />
           </Link>
