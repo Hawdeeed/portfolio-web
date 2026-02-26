@@ -69,10 +69,10 @@ export const About = () => {
               className="bg-[#ff004f] text-lg font-semibold w-full py-2 sm:w-[150px] text-white rounded-lg"
               onClick={onButtonClick}
             />
-            <Button
+            {/* <Button
               text="Hire me"
               className="text-[#ff004f] bg-white text-lg font-semibold py-2 w-full sm:w-[150px] rounded-lg"
-            />
+            /> */}
           </div>
         </div>
 
