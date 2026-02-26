@@ -8,17 +8,11 @@ import Heading from "../typography/heading";
 import Text from "../typography/text";
 
 export const About = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const [showCartoon, setShowCartoon] = useState(false);
-
-  // Fade-in effect for section
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   // Auto-transform effect
   useEffect(() => {
-    const timer1 = setTimeout(() => setShowCartoon(true), 1500);
+    const timer1 = setTimeout(() => setShowCartoon(true), 1000);
     const timer2 = setTimeout(() => setShowCartoon(false), 3000);
     return () => {
       clearTimeout(timer1);
@@ -39,12 +33,11 @@ export const About = () => {
 
   return (
     <section
-      className={`bg-bg-dark px-6 sm:px-14 xl:px-24  py-6 transition-opacity duration-1000 ease-in-out ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
+      className={`bg-bg-dark px-6 sm:px-14 xl:px-24 py-6
+        }`}
       id="about"
     >
-      <div className="flex flex-col lg:flex-row justify-center items-center min-h-[550px]">
+      <div className="flex flex-col lg:flex-row justify-center items-center min-h-[540px]">
         {/* Left Content */}
         <div className=" flex-1 flex flex-col justify-center gap-4 pr-0 lg:pr-8 mb-6 lg:mb-0">
           <div>
