@@ -3,11 +3,6 @@ interface HeaderItem {
   href: string;
 }
 
-interface EmailItem {
-  value: string;
-  href: string;
-}
-
 type PhoneItem = string;
 
 interface SocialItem {
@@ -24,10 +19,7 @@ interface LinkItem {
 }
 
 interface FooterItems {
-  email: EmailItem;
-  phone: PhoneItem;
   socials: SocialItem[];
-  linkItems: LinkItem[];
 }
 
 interface Skill {
@@ -39,7 +31,6 @@ interface Experience {
   title: string;
   description: string;
 }
-
 
 interface Project {
   imageUrl: string;
@@ -59,11 +50,9 @@ interface Award {
   description: string;
 }
 
-
-interface Offer{
-  imageUrl:string;
+interface Offer {
+  imageUrl: string;
   description: string;
-
 }
 interface Hire {
   title: string;

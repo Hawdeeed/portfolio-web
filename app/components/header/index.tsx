@@ -1,5 +1,6 @@
 "use client";
 import { IMAGES } from "@/share/assets";
+import { Quicklinks } from "@/share/data";
 import { ROUTES } from "@/share/routes";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,21 +9,10 @@ import { Menu } from "../icons";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-
-  // your header items
-  const additionalItems = [
-    { name: "About", id: "about" },
-    { name: "Skills", id: "skills" },
-    { name: "Education", id: "education" },
-    { name: "Projects", id: "projects" },
-    { name: "Certificates", id: "certificates" },
-    { name: "Contact", id: "contact" },
-  ];
-
   // split into left and right
-  const mid = Math.ceil(additionalItems.length / 2);
-  const leftItems = additionalItems.slice(0, mid);
-  const rightItems = additionalItems.slice(mid);
+  const mid = Math.ceil(Quicklinks.length / 2);
+  const leftItems = Quicklinks.slice(0, mid);
+  const rightItems = Quicklinks.slice(mid);
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
@@ -31,7 +21,7 @@ const Header = () => {
     setShowDropdown(false);
   };
 
-  const renderItems = (items: typeof additionalItems, mobile = false) =>
+  const renderItems = (items: typeof Quicklinks, mobile = false) =>
     items.map((item, index) => (
       <li key={index}>
         <button
@@ -81,7 +71,7 @@ const Header = () => {
 
           {showDropdown && (
             <ul className="absolute right-6 mt-4 bg-white rounded-lg shadow-lg w-52 p-2">
-              {renderItems(additionalItems, true)}
+              {renderItems(Quicklinks, true)}
             </ul>
           )}
         </div>

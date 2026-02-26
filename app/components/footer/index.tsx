@@ -1,63 +1,60 @@
-"use client";
 import { IMAGES } from "@/share/assets";
-import { FOOTER_ITEMS } from "@/share/data";
+import { FOOTER_ITEMS, Quicklinks } from "@/share/data";
 import { ROUTES } from "@/share/routes";
 import Image from "next/image";
 import Link from "next/link";
-import { InputHTMLAttributes, useState } from "react";
-import Button from "../button";
-import { Email } from "../icons";
+import { AiOutlineMail } from "react-icons/ai";
+import { CiLocationOn } from "react-icons/ci";
 
-interface FooterInputProps extends InputHTMLAttributes<HTMLInputElement> {
-  onSend: () => void;
+interface ContactItem {
+  icon?: React.ReactNode;
+  value: string;
+  href?: string;
 }
 
-const FooterInput: React.FC<FooterInputProps> = ({ onSend, ...props }) => {
-  return (
-    <div className="flex justify-center items-center gap-2 px-1 xl:px-1.5 bg-gray-800 rounded-lg w-fit">
-      <Email className="w-5 xl:w-6 h-5 xl:h-6 ml-2" />
-      <input
-        id="email"
-        autoComplete="off"
-        type="email"
-        placeholder="name@domain.com"
-        className="bg-transparent h-full xl:min-w-[220px] py-3 xl:py-4 outline-none text-white text-sm xl:text-base"
-        {...props}
-      />
-      <Button
-        text="Send"
-        className="bg-primary-gradient px-6 xl:px-10 py-2 xl:py-2.5 text-white text-xs xl:text-sm"
-        onClick={onSend}
-      />
-    </div>
-  );
+interface GetInTouchItems {
+  email: ContactItem;
+  location: ContactItem;
+}
+
+export const GET_IN_TOUCH: GetInTouchItems = {
+  email: {
+    icon: <AiOutlineMail />,
+    value: "hadeeda980@gmail.com",
+    href: "mailto:hadeeda980@gmail.com",
+  },
+  location: {
+    icon: <CiLocationOn />,
+    value: "Lahore, Pakistan",
+  },
 };
-
-const Footer = () => {
-  const [email, setEmail] = useState<string>("");
-
+export const Footer = () => {
   return (
-    <footer id="footer" className="bg-bg-dark">
-      <div className="bg-bg-dark flex flex-col lg:flex-row gap-10 lg:gap-0 py-16 px-6 sm:px-14 xl:px-24 max-w-[1500px] mx-auto">
-        <div className="w-full lg:w-[30%] xl:w-[20%] flex flex-col gap-4 lg:gap-6 xl:min-w-[360px]">
-          <Link href={ROUTES.home} className="w-fit">
-            <Image
-              src={IMAGES.logo}
-              alt="logo"
-              width={100}
-              height={100}
-              loading="eager"
-              priority
-              className="w-auto h-24 pr-3"
-            />
-          </Link>
-          <div className="w-fit text-white text-lg xl:text-xl leading-[23px] font-extralight flex flex-col gap-1">
-            <Link href={FOOTER_ITEMS.email.href} className="hover:underline">
-              {FOOTER_ITEMS.email.value}
+    <>
+      <div className="bg-bg-dark py-10 px-14 flex flex-col md:flex-row justify-between gap-8 md:gap-4">
+        <div className="left flex flex-col gap-4">
+          <div className="flex flex-row gap-1 items-center">
+            <Link href={ROUTES.home} className="w-fit">
+              <Image
+                src={IMAGES.logo}
+                alt="logo"
+                width={100}
+                height={100}
+                loading="eager"
+                priority
+                className="w-auto h-16 lg:h-20 pr-1"
+              />
             </Link>
-            <p>Phone: {FOOTER_ITEMS.phone}</p>
+            <h1 className="text-2xl lg:text-3xl font-bold text-[#ff004f]">
+              Hadeed Ahmed
+            </h1>
           </div>
-          <div className="w-fit flex gap-3">
+          <p className="text-sm lg:text-lg w-full max-w-[300px] lg:max-w-[600px] text-white">
+            Blending AI innovation with full-stack development to create smart,
+            scalable, and impactful digital products that solve real-world
+            problems and enhance user experiences.{" "}
+          </p>
+          <div className="flex flex-row gap-4">
             {FOOTER_ITEMS.socials.map((social: SocialItem, index: number) => (
               <Link key={index} href={social.href} target="_blank">
                 <Image
@@ -67,54 +64,56 @@ const Footer = () => {
                   height={30}
                   loading="eager"
                   priority
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                 />
               </Link>
             ))}
           </div>
         </div>
-        <div className="w-full lg:w-[70%] xl:w-[80%]">
-          <div className="w-full mx-auto flex flex-col md:flex-row justify-between gap-10">
-            {FOOTER_ITEMS.linkItems.map((item: LinkItem, index: number) => (
-              <div key={index} className="flex flex-col gap-4">
-                <h3 className="text-white text-lg xl:text-xl leading-[23px] font-semibold">
+
+        <div className="flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-20">
+          <div className="center md:min-w-32">
+            <h1 className="font-semibold text-xl text-[#ff004f]">
+              Quick Links
+            </h1>
+            <div className="flex flex-col gap-3 mt-4">
+              {Quicklinks.map((item, index) => (
+                <Link
+                  key={index}
+                  href={`#${item.id}`}
+                  className="text-white text-sm lg:text-lg hover:text-[#ff004f] transition-colors duration-300"
+                >
                   {item.name}
-                </h3>
-                <ul className="flex flex-col gap-2 text-white text-base xl:text-lg leading-[18px] font-light">
-                  {item.links.map(
-                    (
-                      link: {
-                        name: string;
-                        href: string;
-                      },
-                      index: number,
-                    ) => (
-                      <li key={index}>
-                        <Link href={link.href} className="hover:underline">
-                          {link.name}
-                        </Link>
-                      </li>
-                    ),
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="right">
+            <h1 className="font-semibold text-xl text-[#ff004f]">
+              Get In Touch
+            </h1>
+            <div className="flex flex-col gap-4 mt-4">
+              {Object.values(GET_IN_TOUCH).map((item, index) => (
+                <div key={index} className="flex items-center gap-3 group">
+                  <span className="text-xl text-[#ff004f]">{item.icon}</span>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      className="text-white text-sm lg:text-lg group-hover:text-white transition-colors duration-300"
+                    >
+                      {item.value}
+                    </a>
+                  ) : (
+                    <span className="text-white text-sm lg:text-lg">
+                      {item.value}
+                    </span>
                   )}
-                  {item.name === "Subscribe" && (
-                    <li>
-                      <FooterInput
-                        onSend={() => {}}
-                        value={email}
-                        onChange={(
-                          event: React.ChangeEvent<HTMLInputElement>,
-                        ) => setEmail(event.target.value)}
-                      />
-                    </li>
-                  )}
-                </ul>
-              </div>
-            ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </>
   );
 };
-
-export default Footer;

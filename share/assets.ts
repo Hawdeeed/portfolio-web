@@ -11,6 +11,8 @@ export const IMAGES = {
     facebook: `${ASSETS_BASE_URL}/socials/facebook.svg`,
     linkedin: `${ASSETS_BASE_URL}/socials/linkedin.svg`,
     instagram: `${ASSETS_BASE_URL}/socials/instagram.svg`,
+    github: `${ASSETS_BASE_URL}/socials/github.svg`,
+    fiverr: `${ASSETS_BASE_URL}/socials/fiverr.png`,
   },
   aboutUs: {
     cv: `${ASSETS_BASE_URL}/about-us/resume.pdf`,
