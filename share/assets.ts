@@ -3,16 +3,19 @@ import { ASSETS_BASE_URL } from "./config";
 export const IMAGES = {
   logo: `${ASSETS_BASE_URL}/logo.png`,
   hadeed: `${ASSETS_BASE_URL}/hadeed2.png`,
+  hadeedCartoon: `${ASSETS_BASE_URL}/hadeed-cartoon.png`,
+
   frame: `${ASSETS_BASE_URL}/frame.svg`,
 
   socials: {
     facebook: `${ASSETS_BASE_URL}/socials/facebook.svg`,
     linkedin: `${ASSETS_BASE_URL}/socials/linkedin.svg`,
     instagram: `${ASSETS_BASE_URL}/socials/instagram.svg`,
+    github: `${ASSETS_BASE_URL}/socials/github.svg`,
+    fiverr: `${ASSETS_BASE_URL}/socials/fiverr.png`,
   },
-  aboutUs:{
+  aboutUs: {
     cv: `${ASSETS_BASE_URL}/about-us/resume.pdf`,
-
   },
   skills: {
     c: `${ASSETS_BASE_URL}/skills/c.svg`,
@@ -40,7 +43,6 @@ export const IMAGES = {
     artist: `${ASSETS_BASE_URL}/projects/artist.png`,
     gigo: `${ASSETS_BASE_URL}/projects/gigo.png`,
     kitchen: `${ASSETS_BASE_URL}/projects/kitchencabs.png`,
-
   },
   certificates: {
     hackerrank: `${ASSETS_BASE_URL}/certificates/hackerrank.png`,

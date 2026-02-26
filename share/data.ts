@@ -1,30 +1,16 @@
 import { IMAGES } from "./assets";
 
-export const HEADER_ITEMS: HeaderItem[] = [
-  // {
-  //   name: "Home",
-  //   href: ROUTES.home,
-  // },
-  // {
-  //   name: "About",
-  //   href: ROUTES.about,
-  // },
-  // {
-  //   name: "Careers",
-  //   href: ROUTES.careers,
-  // },
-  // {
-  //   name: "Portfolio",
-  //   href: ROUTES.portfolio,
-  // },
+// your header items
+export const Quicklinks = [
+  { name: "About", id: "about" },
+  { name: "Skills", id: "skills" },
+  { name: "Education", id: "education" },
+  { name: "Projects", id: "projects" },
+  { name: "Certificates", id: "certificates" },
+  // { name: "Contact", id: "contact" },
 ];
 
 export const FOOTER_ITEMS: FooterItems = {
-  email: {
-    value: "hadeeda980@gmail.com",
-    href: "mailto:hadeeda980@gmail.com",
-  },
-  phone: "+923054827267",
   socials: [
     {
       icon: IMAGES.socials.facebook,
@@ -38,8 +24,15 @@ export const FOOTER_ITEMS: FooterItems = {
       icon: IMAGES.socials.instagram,
       href: "https://www.instagram.com/hadeedsheikhh?igsh=MWJoNHFoYmVwZ3hmNg%3D%3D&utm_source=qr ",
     },
+    {
+      icon: IMAGES.socials.github,
+      href: "https://github.com/Hawdeeed",
+    },
+    {
+      icon: IMAGES.socials.fiverr,
+      href: "https://www.fiverr.com/s/Kelv82Y",
+    },
   ],
-  linkItems: [],
 };
 
 export const CLIENTS: Skill[] = [

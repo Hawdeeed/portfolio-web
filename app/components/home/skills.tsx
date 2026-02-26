@@ -17,7 +17,7 @@ const Skills = () => {
           }
         });
       },
-      { threshold: 0.3 } // Adjust this threshold as needed
+      { threshold: 0.3 }, // Adjust this threshold as needed
     );
 
     if (sectionRef.current) {
