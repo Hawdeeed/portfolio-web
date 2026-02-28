@@ -14,6 +14,9 @@ export const IMAGES = {
     github: `${ASSETS_BASE_URL}/socials/github.svg`,
     fiverr: `${ASSETS_BASE_URL}/socials/fiverr.png`,
   },
+  contact: {
+    contactBackground: `${ASSETS_BASE_URL}/contact/background.png`,
+  },
   aboutUs: {
     cv: `${ASSETS_BASE_URL}/about-us/resume.pdf`,
   },
