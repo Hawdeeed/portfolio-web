@@ -7,7 +7,7 @@ export const Quicklinks = [
   { name: "Education", id: "education" },
   { name: "Projects", id: "projects" },
   { name: "Certificates", id: "certificates" },
-  // { name: "Contact", id: "contact" },
+  { name: "Contact", id: "contact" },
 ];
 
 export const FOOTER_ITEMS: FooterItems = {
