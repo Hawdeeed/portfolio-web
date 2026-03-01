@@ -19,12 +19,12 @@ interface GetInTouchItems {
 
 export const GET_IN_TOUCH: GetInTouchItems = {
   email: {
-    icon: <AiOutlineMail />,
+    icon: <AiOutlineMail className="w-5 h-5" />,
     value: "hadeeda980@gmail.com",
     href: "mailto:hadeeda980@gmail.com",
   },
   location: {
-    icon: <CiLocationOn />,
+    icon: <CiLocationOn className="w-6 h-6" />,
     value: "Lahore, Pakistan",
   },
 };
