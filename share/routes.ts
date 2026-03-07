@@ -4,5 +4,6 @@ export const ROUTES = {
   skills: "/#skills",
   education: "/#education",
   projects: "/#projects",
-  certificates: "/#certificates"
+  certificates: "/#certificates",
+  contact: "/#contact",
 };

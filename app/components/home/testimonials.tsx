@@ -133,14 +133,12 @@ const Testimonials = () => {
             <TestimonialCard key={client.clientName} client={client} />
           ))}
         </div>
-
-        {/* View More CTA */}
         <div className="flex justify-center mt-10">
           <a
             href="https://www.fiverr.com/s/0b3lGQa"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-black px-6 py-3 rounded-xl hover:opacity-90 transition"
+            className="bg-white text-[#ff004f] px-6 py-3 rounded-xl hover:opacity-90 transition"
           >
             View All Reviews on Fiverr
           </a>
