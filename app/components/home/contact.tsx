@@ -52,7 +52,7 @@ ${message}
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden min-h-[80%]">
+    <section id="contact" className="relative overflow-hidden min-h-screen">
       <Image
         src={IMAGES.contact.contactBackground}
         alt="Contact Background"
@@ -123,7 +123,7 @@ ${message}
                 type="submit"
                 text="Submit"
                 disabled
-                className="w-full sm:min-w-[30%] py-3 bg-[#ff004f] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full sm:w-[60%] py-3 bg-[#ff004f] text-white disabled:opacity-50 disabled:cursor-not-allowed"
               />
             </div>
           </div>

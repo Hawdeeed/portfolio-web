@@ -1,7 +1,9 @@
 "use client";
 
 import { IMAGES } from "@/share/assets";
+import { ROUTES } from "@/share/routes";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Button from "../button";
 import Heading from "../typography/heading";
@@ -9,6 +11,7 @@ import Text from "../typography/text";
 
 export const About = () => {
   const [showCartoon, setShowCartoon] = useState(false);
+  const router = useRouter();
 
   // Auto-transform effect
   useEffect(() => {
@@ -69,10 +72,11 @@ export const About = () => {
               className="bg-[#ff004f] text-lg font-semibold w-full py-2 sm:w-[150px] text-white rounded-lg"
               onClick={onButtonClick}
             />
-            {/* <Button
+            <Button
               text="Hire me"
               className="text-[#ff004f] bg-white text-lg font-semibold py-2 w-full sm:w-[150px] rounded-lg"
-            /> */}
+              onClick={() => router.push(ROUTES.contact)}
+            />
           </div>
         </div>
 
