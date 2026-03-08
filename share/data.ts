@@ -111,20 +111,20 @@ export const PROJECTS: Project[] = [
     sourceCodeUrl: "https://github.com/Hawdeeed/Luxe-Kitchen-Cabinets-Website",
   },
 
-  {
-    imageUrl: IMAGES.projects.news,
-    title: "React Based NewsAPI",
-    description:
-      "Developed a dynamic and responsive news application using React that integrates with a News API to provide users with the latest news articles from various sources. The application features a sleek, user-friendly interface designed with Bootstrap CSS, ensuring a seamless and visually appealing user experience across different devices.",
-    skills: [
-      "ReactJS",
-      "Bootstrap",
-      "JavaScript",
-      "API integeration",
-      "NodeJS",
-    ], // Added skills
-    sourceCodeUrl: "https://github.com/Hawdeeed/React-Based-News-API",
-  },
+  // {
+  //   imageUrl: IMAGES.projects.news,
+  //   title: "React Based NewsAPI",
+  //   description:
+  //     "Developed a dynamic and responsive news application using React that integrates with a News API to provide users with the latest news articles from various sources. The application features a sleek, user-friendly interface designed with Bootstrap CSS, ensuring a seamless and visually appealing user experience across different devices.",
+  //   skills: [
+  //     "ReactJS",
+  //     "Bootstrap",
+  //     "JavaScript",
+  //     "API integeration",
+  //     "NodeJS",
+  //   ], // Added skills
+  //   sourceCodeUrl: "https://github.com/Hawdeeed/React-Based-News-API",
+  // },
   // {
   //   imageUrl: IMAGES.projects.login,
   //   title: "Transparent Form",
@@ -133,14 +133,14 @@ export const PROJECTS: Project[] = [
   //   skills: ["HTML","CSS"], // Added skills
 
   // },
-  {
-    imageUrl: IMAGES.projects.textUtils,
-    title: "Text-Utils",
-    description:
-      "Developed an engaging website named Text Utils using ReactJS, designed to manage text efficiently. The application features both light and dark background modes, allowing users to switch between themes based on their preference. It includes text transformation, character and word count, and formatting options etc. ",
-    skills: ["ReactJS", "Bootstrap", "JavaScript", "NodeJS", "Redux"], // Added skills
-    sourceCodeUrl: "",
-  },
+  // {
+  //   imageUrl: IMAGES.projects.textUtils,
+  //   title: "Text-Utils",
+  //   description:
+  //     "Developed an engaging website named Text Utils using ReactJS, designed to manage text efficiently. The application features both light and dark background modes, allowing users to switch between themes based on their preference. It includes text transformation, character and word count, and formatting options etc. ",
+  //   skills: ["ReactJS", "Bootstrap", "JavaScript", "NodeJS", "Redux"], // Added skills
+  //   sourceCodeUrl: "",
+  // },
   // {
   //   imageUrl: IMAGES.projects.shows,
   //   title: "Landing Page",
@@ -149,29 +149,29 @@ export const PROJECTS: Project[] = [
   //   skills: ["HTML","CSS"], // Added skills
 
   // },
-  {
-    imageUrl: IMAGES.projects.chat,
-    title: "Real Time Chat",
-    description:
-      "Developed a dynamic chat application using Node.js and Socket.IO, facilitating instant messaging and real-time communication between users. The application is making it easy for users to send and receive messages seamlessly. By utilizing Node.js and the real-time capabilities of Sockets, it delivers low latency and high performance.",
-    skills: [
-      "NodeJS",
-      "Sockets",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Users Interaction",
-    ], // Added skills
-    sourceCodeUrl: "https://github.com/Hawdeeed/WeChat-App",
-  },
-  {
-    imageUrl: IMAGES.projects.pharmacy,
-    title: "Pharmacy Management System",
-    description:
-      "I developed a comprehensive Pharmacy Management System using ASP.NET, C#, and Microsoft SQL Server, which streamlines operations including inventory, sales, and prescription management, while enhancing customer and supplier interactions through detailed analytics. I didn't focus much on front-end side here.",
-    skills: ["ASP.NET", "C#", "Microsoft SQL", "Database Management"], // Added skills
-    sourceCodeUrl: "",
-  },
+  // {
+  //   imageUrl: IMAGES.projects.chat,
+  //   title: "Real Time Chat",
+  //   description:
+  //     "Developed a dynamic chat application using Node.js and Socket.IO, facilitating instant messaging and real-time communication between users. The application is making it easy for users to send and receive messages seamlessly. By utilizing Node.js and the real-time capabilities of Sockets, it delivers low latency and high performance.",
+  //   skills: [
+  //     "NodeJS",
+  //     "Sockets",
+  //     "JavaScript",
+  //     "HTML",
+  //     "CSS",
+  //     "Users Interaction",
+  //   ], // Added skills
+  //   sourceCodeUrl: "https://github.com/Hawdeeed/WeChat-App",
+  // },
+  // {
+  //   imageUrl: IMAGES.projects.pharmacy,
+  //   title: "Pharmacy Management System",
+  //   description:
+  //     "I developed a comprehensive Pharmacy Management System using ASP.NET, C#, and Microsoft SQL Server, which streamlines operations including inventory, sales, and prescription management, while enhancing customer and supplier interactions through detailed analytics. I didn't focus much on front-end side here.",
+  //   skills: ["ASP.NET", "C#", "Microsoft SQL", "Database Management"], // Added skills
+  //   sourceCodeUrl: "",
+  // },
   // {
   //   imageUrl: IMAGES.projects.maze,
   //   title: "Bee Game",
