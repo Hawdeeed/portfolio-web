@@ -2,8 +2,8 @@ import { ASSETS_BASE_URL } from "./config";
 
 export const IMAGES = {
   logo: `${ASSETS_BASE_URL}/logo.png`,
-  hadeed: `${ASSETS_BASE_URL}/hadeed2.png`,
-  hadeedCartoon: `${ASSETS_BASE_URL}/hadeed-cartoon.png`,
+  hadeed: `${ASSETS_BASE_URL}/hadeed2.jpg`,
+  hadeedCartoon: `${ASSETS_BASE_URL}/hadeed-cartoon.jpg`,
 
   frame: `${ASSETS_BASE_URL}/frame.svg`,
 
@@ -15,7 +15,7 @@ export const IMAGES = {
     fiverr: `${ASSETS_BASE_URL}/socials/fiverr.png`,
   },
   contact: {
-    contactBackground: `${ASSETS_BASE_URL}/contact/background.png`,
+    contactBackground: `${ASSETS_BASE_URL}/contact/background.jpg`,
   },
   aboutUs: {
     cv: `${ASSETS_BASE_URL}/about-us/resume.pdf`,
@@ -32,27 +32,25 @@ export const IMAGES = {
     html: `${ASSETS_BASE_URL}/skills/html.svg`,
   },
   projects: {
-    news: `${ASSETS_BASE_URL}/projects/news.png`,
-    login: `${ASSETS_BASE_URL}/projects/login.png`,
-    shows: `${ASSETS_BASE_URL}/projects/shows.png`,
-    textUtils: `${ASSETS_BASE_URL}/projects/textutils.png`,
+    // news: `${ASSETS_BASE_URL}/projects/news.jpg`,
+    // login: `${ASSETS_BASE_URL}/projects/login.png`,
+    // shows: `${ASSETS_BASE_URL}/projects/shows.png`,
+    // textUtils: `${ASSETS_BASE_URL}/projects/textutils.png`,
     chat: `${ASSETS_BASE_URL}/projects/chat.jpg`,
-    pharmacy: `${ASSETS_BASE_URL}/projects/pharmacy.png`,
-
+    // pharmacy: `${ASSETS_BASE_URL}/projects/pharmacy.png`,
     maze: `${ASSETS_BASE_URL}/projects/maze.png`,
-    dipProject: `${ASSETS_BASE_URL}/projects/dipProject.png`,
-
-    foodpanda: `${ASSETS_BASE_URL}/projects/foodpanda.png`,
-    artist: `${ASSETS_BASE_URL}/projects/artist.png`,
-    gigo: `${ASSETS_BASE_URL}/projects/gigo.png`,
-    kitchen: `${ASSETS_BASE_URL}/projects/kitchencabs.png`,
+    dipProject: `${ASSETS_BASE_URL}/projects/dipProject.jpg`,
+    foodpanda: `${ASSETS_BASE_URL}/projects/foodpanda.jpg`,
+    artist: `${ASSETS_BASE_URL}/projects/artist.jpg`,
+    gigo: `${ASSETS_BASE_URL}/projects/gigo.jpg`,
+    kitchen: `${ASSETS_BASE_URL}/projects/kitchencabs.jpg`,
   },
   certificates: {
     hackerrank: `${ASSETS_BASE_URL}/certificates/hackerrank.png`,
     softec23: `${ASSETS_BASE_URL}/certificates/softec23.png`,
-    nascon24: `${ASSETS_BASE_URL}/certificates/nascon24.png`,
-    deans: `${ASSETS_BASE_URL}/certificates/deans.png`,
-    huawei: `${ASSETS_BASE_URL}/certificates/huawei.png`,
+    nascon24: `${ASSETS_BASE_URL}/certificates/nascon24.jpg`,
+    deans: `${ASSETS_BASE_URL}/certificates/deans.jpg`,
+    huawei: `${ASSETS_BASE_URL}/certificates/huawei.jpg`,
     // aiconcepts: `${ASSETS_BASE_URL}/certificates/microsoft-AIconcepts.png`,
   },
   awards: {
