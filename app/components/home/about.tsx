@@ -25,7 +25,7 @@ export const About = () => {
 
   // Download CV
   const onButtonClick = () => {
-    const pdfUrl = "about-us/resume.pdf";
+    const pdfUrl = "about-us/HadeedResume.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Hadeed-Resume.pdf";
