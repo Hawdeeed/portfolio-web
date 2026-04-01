@@ -8,8 +8,19 @@ import "./globals.css";
 const DMSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hadeed Portfolio",
-  description: "Hadeed Ahmed",
+  title: "Hadeed Ahmed | Web & AI Developer",
+  description:
+    "Hadeed Ahmed is an AI Developer and Web Developer speiclized in full stack web development, Machine Learning, and AI-powered applications. Explore projects like AI chatbots, story-to-movie generator, and freelancing platform.",
+  keywords: [
+    "Hadeed Ahmed",
+    "AI Developer Pakistan",
+    "Next.js Developer Portfolio",
+    "Machine Learning Projects",
+    "AI Chatbot Developer",
+    "Freelance Web Developer",
+  ],
+  authors: [{ name: "Hadeed Ahmed" }],
+  creator: "Hadeed Ahmed",
 };
 
 export default function RootLayout({
