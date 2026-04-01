@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "AI Chatbot Developer",
     "Freelance Web Developer",
   ],
+  verification: {
+    google: "cfcQM91KUb4sxyvcPO5eQmp5irPBJKGjDVD7txzIXwQ", // paste ONLY the content value here
+  },
   authors: [{ name: "Hadeed Ahmed" }],
   creator: "Hadeed Ahmed",
 };
