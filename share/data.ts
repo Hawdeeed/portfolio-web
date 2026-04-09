@@ -13,17 +13,10 @@ export const Quicklinks = [
 export const FOOTER_ITEMS: FooterItems = {
   socials: [
     {
-      icon: IMAGES.socials.facebook,
-      href: "https://www.facebook.com/sheikh.hadeed.3/",
-    },
-    {
       icon: IMAGES.socials.linkedin,
       href: "https://www.linkedin.com/in/hadeed-ahmed-27a97a268/",
     },
-    {
-      icon: IMAGES.socials.instagram,
-      href: "https://www.instagram.com/hadeedsheikhh?igsh=MWJoNHFoYmVwZ3hmNg%3D%3D&utm_source=qr ",
-    },
+
     {
       icon: IMAGES.socials.github,
       href: "https://github.com/Hawdeeed",
