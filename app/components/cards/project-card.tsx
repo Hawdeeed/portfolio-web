@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { TechBadge } from "@/app/components/ui/badge";
 import { cn } from "@/lib/utils";
 import type { Project } from "@/share/types";
@@ -35,9 +34,7 @@ export function FeaturedProject({ project }: { project: Project }) {
     >
       <div className="overflow-hidden rounded-3xl border border-white/[0.08] bg-card/50">
         {/* Media — full screenshot, never cropped */}
-        <Link
-          href={`/projects/${project.slug}`}
-          aria-label={`${project.title} case study`}
+        <div
           className={cn(
             "relative flex aspect-[16/9] w-full items-center justify-center overflow-hidden border-b border-white/[0.06] bg-gradient-to-br",
             coverGradient(project),
@@ -56,7 +53,7 @@ export function FeaturedProject({ project }: { project: Project }) {
               {project.title}
             </span>
           )}
-        </Link>
+        </div>
 
         {/* Content */}
         <div className="p-7 lg:p-9">
@@ -67,15 +64,9 @@ export function FeaturedProject({ project }: { project: Project }) {
             <span className="text-white/40">{project.year}</span>
           </div>
 
-          <Link
-            href={`/projects/${project.slug}`}
-            className="group/title mt-4 inline-flex items-center gap-2"
-          >
-            <h3 className="font-display text-2xl font-bold text-white transition-colors group-hover/title:text-accent-cyan lg:text-3xl">
-              {project.title}
-            </h3>
-            <ArrowUpRight className="h-5 w-5 shrink-0 text-white/40 transition-all group-hover/title:translate-x-0.5 group-hover/title:text-accent-cyan" />
-          </Link>
+          <h3 className="mt-4 font-display text-2xl font-bold text-white lg:text-3xl">
+            {project.title}
+          </h3>
           <p className="mt-1 text-sm font-medium text-gradient">
             {project.tagline}
           </p>
@@ -148,9 +139,7 @@ export function ProjectCard({ project }: { project: Project }) {
       transition={{ type: "spring", stiffness: 300, damping: 22 }}
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-card/50 transition-colors hover:border-white/20"
     >
-      <Link
-        href={`/projects/${project.slug}`}
-        aria-label={`${project.title} case study`}
+      <div
         className={cn(
           "relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden border-b border-white/[0.06] bg-gradient-to-br",
           coverGradient(project),
@@ -169,7 +158,7 @@ export function ProjectCard({ project }: { project: Project }) {
             {project.title}
           </span>
         )}
-      </Link>
+      </div>
 
       <div className="flex flex-1 flex-col p-6">
         <div className="flex items-center gap-2 text-xs">
@@ -179,15 +168,9 @@ export function ProjectCard({ project }: { project: Project }) {
           <span className="text-white/40">{project.year}</span>
         </div>
 
-        <Link
-          href={`/projects/${project.slug}`}
-          className="group/title mt-3 inline-flex items-center gap-1.5"
-        >
-          <h3 className="font-display text-lg font-semibold text-white transition-colors group-hover/title:text-accent-cyan">
-            {project.title}
-          </h3>
-          <ArrowUpRight className="h-4 w-4 shrink-0 text-white/35 transition-all group-hover/title:translate-x-0.5 group-hover/title:text-accent-cyan" />
-        </Link>
+        <h3 className="mt-3 font-display text-lg font-semibold text-white">
+          {project.title}
+        </h3>
         <p className="text-xs font-medium text-gradient">{project.tagline}</p>
         <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-white/55">
           {project.description}

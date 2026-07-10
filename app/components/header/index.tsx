@@ -56,7 +56,7 @@ export default function Header() {
               HA
             </span>
             <span className="hidden font-display text-sm font-semibold tracking-tight text-white sm:block">
-              Hadeed<span className="text-white/40">.dev</span>
+              Hadeed Ahmed
             </span>
           </button>
 
