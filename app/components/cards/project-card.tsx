@@ -7,17 +7,11 @@ import { TechBadge } from "@/app/components/ui/badge";
 import { cn } from "@/lib/utils";
 import type { Project } from "@/share/types";
 
-const CATEGORY_GRADIENT: Record<string, string> = {
-  "AI / Gen AI": "from-fuchsia-600/25 via-purple-600/15 to-cyan-500/15",
-  "Full Stack": "from-indigo-600/25 via-blue-600/15 to-sky-500/15",
-  Frontend: "from-sky-600/25 via-indigo-600/15 to-purple-500/15",
-  Systems: "from-amber-600/25 via-orange-600/15 to-rose-500/15",
-};
+/** One subtle emerald wash behind every project cover — consistent, one-hue. */
+const COVER_GRADIENT = "from-emerald-600/20 via-emerald-500/10 to-emerald-400/10";
 
-function coverGradient(project: Project) {
-  return (
-    CATEGORY_GRADIENT[project.category] ?? "from-indigo-600/25 to-cyan-500/15"
-  );
+function coverGradient(_project: Project) {
+  return COVER_GRADIENT;
 }
 
 /* ------------------------------------------------------------------ */

@@ -11,6 +11,9 @@ import { GridBackground } from "@/app/components/ui/backgrounds";
 import { cn } from "@/lib/utils";
 import { MARQUEE_TECH, SKILL_CATEGORIES } from "@/share/data";
 
+/** Single accent gradient shared by every skill card (consistent, one-hue). */
+const ACCENT_GRADIENT = "from-emerald-500 to-emerald-700";
+
 export default function Skills() {
   return (
     <section id="skills" className="section overflow-hidden">
@@ -37,14 +40,14 @@ export default function Skills() {
                   <div
                     className={cn(
                       "absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-br opacity-20 blur-2xl transition-opacity duration-500 group-hover:opacity-40",
-                      cat.accent,
+                      ACCENT_GRADIENT,
                     )}
                   />
 
                   <span
                     className={cn(
                       "inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br text-white shadow-lg",
-                      cat.accent,
+                      ACCENT_GRADIENT,
                     )}
                   >
                     <Icon className="h-6 w-6" />

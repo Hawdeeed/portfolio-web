@@ -17,7 +17,7 @@ function TestimonialCard({ client }: { client: Testimonial }) {
           {Array.from({ length: client.rating }).map((_, i) => (
             <Star
               key={i}
-              className="h-4 w-4 fill-amber-300 text-amber-300"
+              className="h-4 w-4 fill-emerald-400 text-emerald-400"
             />
           ))}
         </div>

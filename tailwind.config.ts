@@ -17,23 +17,27 @@ const config: Config = {
     },
     extend: {
       colors: {
-        background: "#050816",
-        surface: "#0A0A12",
-        card: "#0F111A",
+        background: "#0A0A0C",
+        surface: "#101013",
+        card: "#161619",
         border: "rgba(255,255,255,0.08)",
         primary: {
-          DEFAULT: "#6366F1", // indigo
-          foreground: "#FFFFFF",
+          DEFAULT: "#10B981", // emerald
+          foreground: "#04140D",
         },
+        // Single-hue accent. Legacy sub-keys (cyan/indigo/purple/blue) are kept
+        // so existing class names resolve, but all map to the emerald family.
         accent: {
-          purple: "#8B5CF6",
-          blue: "#3B82F6",
-          cyan: "#22D3EE",
-          indigo: "#6366F1",
+          DEFAULT: "#10B981",
+          indigo: "#10B981",
+          purple: "#10B981",
+          cyan: "#34D399",
+          blue: "#34D399",
+          deep: "#059669",
         },
         muted: {
-          DEFAULT: "#94A3B8",
-          foreground: "#64748B",
+          DEFAULT: "#9CA3AF",
+          foreground: "#6B7280",
         },
       },
       fontFamily: {
@@ -43,14 +47,14 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-brand":
-          "linear-gradient(135deg, #6366F1 0%, #8B5CF6 45%, #22D3EE 100%)",
+          "linear-gradient(135deg, #10B981 0%, #059669 50%, #34D399 100%)",
         "gradient-radial": "radial-gradient(ellipse at center, var(--tw-gradient-stops))",
         "grid-pattern":
           "linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)",
       },
       boxShadow: {
-        glow: "0 0 40px -10px rgba(99,102,241,0.5)",
-        "glow-lg": "0 0 80px -20px rgba(139,92,246,0.6)",
+        glow: "0 0 40px -10px rgba(16,185,129,0.45)",
+        "glow-lg": "0 0 80px -20px rgba(16,185,129,0.5)",
         card: "0 8px 40px -12px rgba(0,0,0,0.6)",
       },
       keyframes: {

@@ -28,9 +28,9 @@ export function TechBadge({
 
 const STATUS_STYLES: Record<string, string> = {
   Live: "border-emerald-400/30 bg-emerald-400/10 text-emerald-300",
-  MVP: "border-amber-400/30 bg-amber-400/10 text-amber-300",
-  Completed: "border-sky-400/30 bg-sky-400/10 text-sky-300",
-  "In Progress": "border-fuchsia-400/30 bg-fuchsia-400/10 text-fuchsia-300",
+  MVP: "border-white/15 bg-white/[0.05] text-white/70",
+  Completed: "border-white/15 bg-white/[0.05] text-white/70",
+  "In Progress": "border-emerald-400/25 bg-emerald-400/[0.08] text-emerald-300/90",
 };
 
 export function StatusBadge({ status }: { status: string }) {

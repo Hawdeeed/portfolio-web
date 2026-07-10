@@ -82,7 +82,7 @@ export default function Education() {
                     transition={{ type: "spring", stiffness: 300, damping: 22 }}
                     className="flex gap-4 rounded-2xl border border-white/[0.08] bg-card/50 p-5 transition-colors hover:border-white/20"
                   >
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-500/10 text-amber-300">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/10 text-emerald-300">
                       <Icon className="h-5 w-5" />
                     </span>
                     <div>
