@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { Eyebrow } from "@/app/components/typography";
-import { AnimatedText, Reveal } from "./motion-primitives";
+import { Reveal } from "./motion-primitives";
 
 interface SectionHeadingProps {
   eyebrow: string;
@@ -35,13 +35,11 @@ export function SectionHeading({
       </Reveal>
 
       <h2 className="max-w-3xl font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-        <AnimatedText text={title} />
+        {title}
         {highlight ? (
           <>
             {" "}
-            <span className="text-gradient-animated">
-              <AnimatedText text={highlight} delay={0.15} />
-            </span>
+            <span className="text-gradient-animated">{highlight}</span>
           </>
         ) : null}
       </h2>

@@ -46,13 +46,13 @@ export default function AiLab() {
           <div>
             <div className="gradient-border overflow-hidden rounded-3xl">
               <div className="overflow-hidden rounded-3xl" ref={emblaRef}>
-                <div className="flex">
+                <div className="flex items-stretch">
                   {AI_WORKFLOWS.map((wf) => (
                     <div
                       key={wf.title}
-                      className="relative min-w-0 flex-[0_0_100%]"
+                      className="flex min-w-0 flex-[0_0_100%] flex-col bg-card"
                     >
-                      <div className="relative aspect-video overflow-hidden bg-card">
+                      <div className="relative aspect-video overflow-hidden">
                         <Image
                           src={wf.image}
                           alt={wf.title}
@@ -60,25 +60,24 @@ export default function AiLab() {
                           sizes="(max-width: 1024px) 100vw, 60vw"
                           className="object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-                        <div className="absolute inset-x-0 bottom-0 p-6">
-                          <div className="mb-2 flex flex-wrap gap-2">
-                            {wf.tags.map((t) => (
-                              <span
-                                key={t}
-                                className="rounded-full border border-white/15 bg-black/40 px-2.5 py-1 text-xs font-medium text-white/80 backdrop-blur"
-                              >
-                                {t}
-                              </span>
-                            ))}
-                          </div>
-                          <h3 className="font-display text-xl font-bold text-white sm:text-2xl">
-                            {wf.title}
-                          </h3>
-                          <p className="mt-1 max-w-xl text-sm text-white/65">
-                            {wf.description}
-                          </p>
+                      </div>
+                      <div className="flex flex-1 flex-col border-t border-white/[0.06] p-5 sm:p-6">
+                        <div className="mb-3 flex flex-wrap gap-2">
+                          {wf.tags.map((t) => (
+                            <span
+                              key={t}
+                              className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-xs font-medium text-white/70"
+                            >
+                              {t}
+                            </span>
+                          ))}
                         </div>
+                        <h3 className="font-display text-lg font-bold text-white sm:text-xl">
+                          {wf.title}
+                        </h3>
+                        <p className="mt-1.5 text-sm leading-relaxed text-white/60">
+                          {wf.description}
+                        </p>
                       </div>
                     </div>
                   ))}
