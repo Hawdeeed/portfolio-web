@@ -41,9 +41,9 @@ export default function AiLab() {
           description="Beyond web apps — I design ComfyUI pipelines for image and video generation: LoRA training, segmentation, and image-to-video animation."
         />
 
-        <div className="mt-16 grid items-start gap-10 lg:grid-cols-[1.35fr_0.65fr]">
+        <div className="mt-16 grid items-start gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,0.65fr)]">
           {/* Carousel */}
-          <div>
+          <div className="min-w-0">
             <div className="gradient-border overflow-hidden rounded-3xl">
               <div className="overflow-hidden rounded-3xl" ref={emblaRef}>
                 <div className="flex items-stretch">
@@ -122,8 +122,8 @@ export default function AiLab() {
           </div>
 
           {/* Capabilities */}
-          <Reveal delay={0.1}>
-            <div className="rounded-3xl border border-white/[0.08] bg-card/50 p-7">
+          <Reveal delay={0.1} className="min-w-0">
+            <div className="rounded-3xl border border-white/[0.08] bg-card/50 p-6 sm:p-7">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand shadow-glow">
                 <Cpu className="h-6 w-6 text-white" />
               </span>
