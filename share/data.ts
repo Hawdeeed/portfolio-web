@@ -478,7 +478,6 @@ export const EDUCATION: EducationItem[] = [
   {
     institution: "FAST — National University of Computer and Emerging Sciences",
     degree: "Bachelor's in Computer Science",
-    period: "Sept 2021 — Dec 2025",
     location: "Lahore, Pakistan",
     grade: "CGPA 3.13 / 4.0",
     coursework: [

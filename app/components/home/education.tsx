@@ -47,9 +47,11 @@ export default function Education() {
                   </div>
 
                   <div className="mt-5 flex flex-wrap items-center gap-3 text-sm">
-                    <span className="rounded-full bg-accent-indigo/15 px-3 py-1 font-medium text-accent-cyan">
-                      {edu.period}
-                    </span>
+                    {edu.period && (
+                      <span className="rounded-full bg-accent-indigo/15 px-3 py-1 font-medium text-accent-cyan">
+                        {edu.period}
+                      </span>
+                    )}
                     <span className="text-white/50">{edu.location}</span>
                     {edu.grade && (
                       <span className="rounded-full bg-emerald-400/10 px-3 py-1 font-medium text-emerald-300">

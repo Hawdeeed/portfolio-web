@@ -103,7 +103,7 @@ export interface AiWorkflow {
 export interface EducationItem {
   institution: string;
   degree: string;
-  period: string;
+  period?: string;
   location: string;
   grade?: string;
   coursework: string[];
